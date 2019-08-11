@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Righteous', cursive;
+  background-color: black;
+  color: white;
+}
+.menu-1{
+  display: inline-block;
+  list-style: none;
+  opacity: 0;
+}
+.menu{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.2s ease-in-out;
+}
+.menu:hover{
+  color: #ff4162;
+}
+.big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11{
+    font-size: 10em;
+    opacity:0;
+    animation-duration: 3s;
+    animation-name: slidein;
+      transition: 0.2s ease-in-out;
+}
+.big-name-2{
+  animation-delay: 1s;
+}
+.big-name-3{
+  animation-delay: 1.5s;
+}
+.big-name-4{
+  animation-delay: 2s;
+}
+.big-name-5{
+  color: #ff4162;
+  animation-delay: 2.5s;
+}
+.big-name-6{
+  animation-delay: 3s;
+}
+.big-name-7{
+  animation-delay: 3.5s;
+}
+.big-name-8{
+  animation-delay: 4s;
+}
+.big-name-9{
+  animation-delay: 4.5s;
+}
+.big-name-10{
+  animation-delay: 5s;
+}
+.big-name-11{
+  animation-delay: 5.5s;
+}
+
+
+
+
+
+
+/* Keyframes */
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
