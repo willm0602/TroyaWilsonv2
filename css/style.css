@@ -6,26 +6,83 @@ body{
   background-color: black;
   color: white;
 }
+li{
+  list-style: none;
+}
 .menu-1{
-  display: inline-block;
   list-style: none;
   opacity: 0;
+  display: flex;
+  padding:0;
+}
+.social-icon{
+  width:15px;
 }
 .menu{
+  padding: 0 1.5%;
   color: white;
   text-decoration: none;
-  font-size: 2em;
+  /* font-size: 2em; */
   transition: 0.2s ease-in-out;
 }
 .menu:hover{
   color: #ff4162;
 }
-.big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11{
-    font-size: 10em;
+.about-text{
+  font-size: 1.5em;
+  opacity:0;
+  /* max-width: 50%; */
+  padding: 0 5%;
+}
+.work-box,.skills{
+  opacity:0;
+  padding: 0 5%;
+}
+.skills-li{
+  margin:auto;
+  animation-iteration-count: infinite;
+  animation-name: upDown;
+  animation-duration: 3s;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.skill-svg{
+  width: 100px;
+}
+.skills-list{
+  display: flex;
+  flex-direction: row;
+}
+.skills-html{
+  animation-delay: 1s;
+}
+.skills-css{
+  animation-delay: 2s;
+}
+.skills-js{
+  animation-delay: 1s;
+}
+.skills-python{
+  animation-delay: 2s;
+}
+.skills-react{
+  animation-delay: 1s;
+}
+.skills-sass{
+  animation-delay: 2s;
+}
+.skills-jquery{
+  animation-delay: 1s;
+}
+
+
+
+
+.big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11,.big-name-k,.big-name-g{
+    font-size: 3em;
     opacity:0;
     animation-duration: 3s;
     animation-name: slidein;
-      transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .big-name-2{
   animation-delay: 1s;
@@ -33,14 +90,17 @@ body{
 .big-name-3{
   animation-delay: 1.5s;
 }
-.big-name-4{
+.big-name-4,.big-name-g{
   animation-delay: 2s;
+}
+.big-name-g{
+  color: #ff4162;
 }
 .big-name-5{
   color: #ff4162;
   animation-delay: 2.5s;
 }
-.big-name-6{
+.big-name-6,.big-name-k{
   animation-delay: 3s;
 }
 .big-name-7{
@@ -59,8 +119,14 @@ body{
   animation-delay: 5.5s;
 }
 
-
-
+.cover{
+  max-width: 250px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.cover:hover{
+  opacity: 1;
+}
 
 
 
@@ -71,5 +137,32 @@ body{
   }
   100% {
     margin-left: 0%;
+  }
+}
+
+/* @keyframes upDown {
+  0% {
+    transform: translateY(250px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(250px);
+  }
+} */
+
+@media(min-width:720px){
+  .about-text{
+    max-width: 50%;
+  }
+  .big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11,.big-name-k,.big-name-g{
+    font-size: 10em;
+  }
+  .menu{
+    font-size: 2em;
+  }
+  .social-icon{
+    width:25px;
   }
 }
