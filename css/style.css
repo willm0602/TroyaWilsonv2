@@ -32,7 +32,7 @@ li{
   color: #ff4162;
 }
 .about-text{
-  font-size: 1.5em;
+  font-size: 1.2em;
   opacity:0;
   /* max-width: 50%; */
   padding: 0 5%;
@@ -81,13 +81,21 @@ li{
 
 
 
-
+.pink{
+  color:#ff4162;
+}
 .big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11,.big-name-k,.big-name-g{
     font-size: 3em;
     opacity:0;
     animation-duration: 3s;
     animation-name: slidein;
     transition: 0.2s ease-in-out;
+}
+.load-name{
+      font-size: 3em;
+      opacity:0;
+      animation-duration: 3s;
+      transition: 0.2s ease-in-out;
 }
 .big-name-2{
   animation-delay: 1s;
@@ -159,9 +167,13 @@ li{
 
 @media(min-width:720px){
   .about-text{
+    font-size: 1.5em;
     max-width: 50%;
   }
   .big-name-1,.big-name-2,.big-name-3,.big-name-4,.big-name-5,.big-name-6,.big-name-7,.big-name-8,.big-name-9,.big-name-10,.big-name-11,.big-name-k,.big-name-g{
+    font-size: 10em;
+  }
+  .load-name{
     font-size: 10em;
   }
   .menu{
