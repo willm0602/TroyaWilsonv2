@@ -57,29 +57,6 @@ li{
   flex-wrap: wrap;
   flex-direction: column;
 }
-.skills-html{
-  animation-delay: 1s;
-}
-.skills-css{
-  animation-delay: 2s;
-}
-.skills-js{
-  animation-delay: 1s;
-}
-.skills-python{
-  animation-delay: 2s;
-}
-.skills-react{
-  animation-delay: 1s;
-}
-.skills-sass{
-  animation-delay: 2s;
-}
-.skills-jquery{
-  animation-delay: 1s;
-}
-
-
 
 .pink{
   color:#ff4162;

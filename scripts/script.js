@@ -23,6 +23,7 @@ $('.work-box').delay(6000).fadeTo(3600,1);
 $('.skills').delay(6000).fadeTo(3600,1);
 
 localStorage.setItem("first_time","1");
+console.log(localStorage.getItem("first_time"));
 }
 else {
   $('.big-name-1').fadeTo(1000 ,1);
@@ -82,4 +83,7 @@ else {
   $('.about-text').fadeTo(1000 ,1);
   $('.work-box').fadeTo(1000 ,1);
   $('.skills').fadeTo(1000 ,1);
+  
+  console.log(localStorage.getItem("first_time"));
+
 }
